@@ -88,9 +88,13 @@
     
     // client_id and client_secret are required
     SimpleAuth.configuration[@"onedrive-web"] = @{};
-    
+
     // client_id, redirect_uri are required
     SimpleAuth.configuration[@"constantcontact"] = @{};
+
+    // client_id, client_secret, and redirect_uri are required
+    SimpleAuth.configuration[@"mailchimp"] = @{};
+
 }
 
 
