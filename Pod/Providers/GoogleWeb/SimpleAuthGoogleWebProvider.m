@@ -161,10 +161,14 @@
     // User ID
     dictionary[@"uid"] = account[@"id"];
     
+    NSMutableDictionary *accountWithRefreshToken = [NSMutableDictionary dictionaryWithDictionary:account];
+    accountWithRefreshToken[@"refresh_token"] = credentials[@"refresh_token"];
+
     // Raw response
     dictionary[@"extra"] = @{
-                             @"raw_info" : account
+                             @"raw_info" : accountWithRefreshToken
                              };
+    
     
     // Location
     NSString *location = account[@"location"][@"name"];
