@@ -25,6 +25,7 @@
         @"client_id" : self.options[@"client_id"],
         @"redirect_uri" : self.options[SimpleAuthRedirectURIKey],
         @"response_type" : @"code",
+        @"access_type": @"offline",
         @"scope" : self.options[@"scope"]
     };
     NSString *URLString = [NSString stringWithFormat:
