@@ -97,6 +97,7 @@
                                    if ([token length] > 0) {
                                        
                                        NSDictionary *credentials = @{
+                                                                     @"refresh_token": dictionary[@"refresh_token"],
                                                                      @"access_token" : token,
                                                                      @"expires" : [NSDate dateWithTimeIntervalSinceNow:[dictionary[@"expires_in"] doubleValue]],
                                                                      @"token_type" : @"bearer",
