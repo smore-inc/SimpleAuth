@@ -184,9 +184,6 @@
         user[@"location"] = location;
     }
     user[@"verified"] = account[@"verified_email"] ? @YES : @NO;
-    user[@"urls"] = @{
-                      @"Google +" : account[@"link"],
-                      };
     
     dictionary[@"info"] = user;
     
